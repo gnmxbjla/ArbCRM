@@ -40,7 +40,7 @@
             android:textSize="25sp" />
 
         <EditText
-            android:id="@+id/editTextNumber5"
+            android:id="@+id/StavkaEditTextNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -66,7 +66,7 @@
             android:textSize="25sp" />
 
         <EditText
-            android:id="@+id/editTextNumber6"
+            android:id="@+id/LeadEditTextNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -92,7 +92,7 @@
             android:textSize="25sp" />
 
         <EditText
-            android:id="@+id/editTextNumber7"
+            android:id="@+id/ApruvEditTextNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -118,7 +118,7 @@
             android:textSize="25sp" />
 
         <EditText
-            android:id="@+id/editTextNumber8"
+            android:id="@+id/TrashEditTextNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -130,9 +130,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="2"
         android:layout_marginTop="400dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="2">
 
         <TextView
             android:id="@+id/roi"
@@ -144,7 +144,7 @@
             android:textSize="25sp" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/RoiResulttextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
@@ -168,7 +168,7 @@
             android:textSize="25sp" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/NolikResultTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
