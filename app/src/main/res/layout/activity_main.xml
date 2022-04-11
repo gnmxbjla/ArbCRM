@@ -24,18 +24,19 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="2"
         android:layout_marginTop="150dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="2">
 
         <TextView
             android:id="@+id/Stavka"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Ставка"
+            android:text="Ставка $"
             android:textColor="@android:color/white"
             android:textSize="25sp" />
 
@@ -43,9 +44,10 @@
             android:id="@+id/StavkaEditTextNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:inputType="numberDecimal"
+            android:textSize="25sp" />
 
     </LinearLayout>
 
@@ -57,11 +59,12 @@
         android:orientation="horizontal">
 
         <TextView
+            android:layout_marginLeft="10dp"
             android:id="@+id/lead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Цена лида"
+            android:text="Цена лида $"
             android:textColor="@android:color/white"
             android:textSize="25sp" />
 
@@ -69,9 +72,11 @@
             android:id="@+id/LeadEditTextNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:inputType="numberDecimal"
+            android:textSize="25sp"
+            />
 
     </LinearLayout>
 
@@ -83,11 +88,12 @@
         android:orientation="horizontal">
 
         <TextView
+            android:layout_marginLeft="10dp"
             android:id="@+id/apruv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Апрув"
+            android:text="Апрув %"
             android:textColor="@android:color/white"
             android:textSize="25sp" />
 
@@ -95,9 +101,11 @@
             android:id="@+id/ApruvEditTextNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:textSize="25sp"
+            />
 
     </LinearLayout>
 
@@ -109,11 +117,12 @@
         android:orientation="horizontal">
 
         <TextView
+            android:layout_marginLeft="10dp"
             android:id="@+id/trash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Треш"
+            android:text="Треш %"
             android:textColor="@android:color/white"
             android:textSize="25sp" />
 
@@ -121,9 +130,11 @@
             android:id="@+id/TrashEditTextNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:textSize="25sp"
+            />
 
     </LinearLayout>
 
@@ -135,6 +146,7 @@
         android:weightSum="2">
 
         <TextView
+            android:layout_marginLeft="10dp"
             android:id="@+id/roi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -148,6 +160,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginLeft="10dp"
             android:textSize="35sp" />
 
     </LinearLayout>
@@ -160,6 +173,7 @@
         android:orientation="horizontal">
 
         <TextView
+            android:layout_marginLeft="10dp"
             android:id="@+id/nolik"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -173,6 +187,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginLeft="10dp"
             android:textSize="35sp" />
 
     </LinearLayout>
@@ -186,10 +201,28 @@
         android:orientation="vertical">
 
         <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:id="@+id/button_result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Посчитать" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="620dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></ImageView>
     </LinearLayout>
 
 

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import com.example.arbcrm.R
 import kotlinx.android.synthetic.main.activity_main.*
+import java.text.DecimalFormat
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,14 +14,28 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         button_result.setOnClickListener {
-            val a = StavkaEditTextNumber.text.toString().toInt()
-            val b = LeadEditTextNumber.text.toString().toInt()
-            val c = ApruvEditTextNumber.text.toString().toInt()
-            val d = TrashEditTextNumber.text.toString().toInt()
+            var a = StavkaEditTextNumber.text.toString().toFloat()
+            var b = LeadEditTextNumber.text.toString().toFloat()
+            var c = ApruvEditTextNumber.text.toString().toFloat()
+            var d = TrashEditTextNumber.text.toString().toFloat()
 
-            val sum = a+b+c+d
+            var pro_C = c/100
+            var pro_D = d/100
 
-            RoiResulttextView.text = sum.toString()
+            val nolik = (a-a*pro_D)*pro_C
+            val roi = (nolik-b)/b
+            var roi_norm = roi*100
+            var roi_end = ("%.2f".format(roi_norm))
+            var nolik_end = ("%.2f".format(nolik))
+
+
+            NolikResultTextView.setText("$nolik_end $")
+            RoiResulttextView.setText("$roi_end %")
+
+            when {
+                roi_norm < 29 -> imageView.setImageResource(R.drawable.cat_sad)
+                roi_norm > 30 -> imageView.setImageResource(R.drawable.cat_good)
+            }
         }
     }
 
